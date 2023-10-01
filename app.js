@@ -7,9 +7,15 @@ const mongoose = require("mongoose");
 app.use(express.json());
 app.use(cors());
 
+// Routes
+const productRoute = require("./routes/product.route");
+
 // ROUTING
 app.get("/", (req, res) => {
   res.send("Route is working!Huh!!!");
 });
+
+// posting to database
+app.use("/api/v1/product", productRoute);
 
 module.exports = app;
