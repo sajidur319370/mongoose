@@ -1,15 +1,17 @@
+const { log } = require("console");
 const Product = require("../models/Product");
 const {
-  getProductService,
+  getAllProductService,
   createProductService,
   updateProductServiceById,
   bulkUpdateProductService,
   deleteProductServiceById,
   bulkDeleteProductService,
+  getSomeProductService,
 } = require("../services/product.services");
 
 // Get Product
-exports.getProducts = async (req, res, next) => {
+exports.getAllProducts = async (req, res, next) => {
   try {
     // const products = await Product.where("name")
     //   .equals(/\w/)
@@ -18,7 +20,66 @@ exports.getProducts = async (req, res, next) => {
     //   .limit(2)
     //   .sort({ quantity: -1 });
 
-    const products = await getProductService();
+    const products = await getAllProductService();
+
+    res.status(200).json({
+      status: "Success",
+      message: "Data Got Successfully",
+      data: products,
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "Failed",
+      message: "Can't get data",
+      error: error.message,
+    });
+  }
+};
+exports.getSomeProducts = async (req, res, next) => {
+  try {
+    // const products = await Product.where("name")
+    //   .equals(/\w/)
+    //   .where("quantity")
+    //   .gte(100)
+    //   .limit(2)
+    //   .sort({ quantity: -1 });
+
+    let filters = { ...req.query };
+
+    // Sort -> Page -> Limit  ->
+    const excludeFields = ["sort", "page", "limit"];
+    excludeFields.forEach((field) => {
+      delete filters[field];
+    });
+
+    // gt|lt|gte|lte
+    let filterString = JSON.stringify(filters);
+    filterString = filterString.replace(
+      /\b(gt|lt|gte|lte)\b/g,
+      (match) => `$${match}`
+    );
+    const parsedFilters = JSON.parse(filterString);
+    filters = parsedFilters;
+
+    const queries = {};
+
+    if (req.query.sort) {
+      const sortBy = req.query.sort.split(",").join(" ");
+      queries.sortBy = sortBy;
+    }
+    if (req.query.fields) {
+      const anyFields = req.query.fields.split(",").join(" ");
+      queries.anyFields = anyFields;
+    }
+
+    if (req.query.page) {
+      const { page = 1, limit = 10 } = req.query;
+      const skip = (page - 1) * Number(limit);
+      queries.skip = skip;
+      queries.limit = Number(limit);
+    }
+
+    const products = await getSomeProductService(filters, queries);
 
     res.status(200).json({
       status: "Success",

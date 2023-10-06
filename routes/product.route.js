@@ -8,7 +8,8 @@ router.route("/bulk-delete").delete(productController.bulkDeleteProduct);
 
 router
   .route("/")
-  .get(productController.getProducts)
+  // .get(productController.getAllProducts)
+  .get(productController.getSomeProducts)
   .post(productController.createProduct);
 
 router

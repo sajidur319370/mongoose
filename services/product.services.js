@@ -1,17 +1,32 @@
 const Product = require("../models/Product");
-
-exports.getProductService = async () => {
+// ________________________________________________________________________
+exports.getAllProductService = async () => {
+  //{ price: { $gte: 300 } }
   const products = await Product.find({});
-
   return products;
 };
 
+// _____________________________________________________________________________
+exports.getSomeProductService = async (filters, queries) => {
+  // const products = await Product.find({}).sort("name price quantity");
+  const products = await Product.find(filters)
+    .skip(queries.skip)
+    .limit(queries.limit)
+    .select(queries.anyFields)
+    .sort(queries.sortBy);
+
+  const productTotal = await Product.countDocuments(filters);
+  const pageTotal = Math.ceil(productTotal / queries.limit);
+  return { pageTotal, productTotal, products };
+};
+
+// _________________________________________________________________________
 exports.createProductService = async (data) => {
   const result = await Product.create(data);
-
   return result;
 };
 
+// ______________________________________________________________________________;
 exports.updateProductServiceById = async (id, data) => {
   const result = await Product.updateOne(
     { _id: id },
@@ -28,6 +43,7 @@ exports.updateProductServiceById = async (id, data) => {
   return result;
 };
 
+// _________________________________________________________________________;
 exports.bulkUpdateProductService = async (data) => {
   // const result = await Product.updateMany({ _id: data.ids }, data.data, {
   //   runValidators: true,
@@ -43,11 +59,13 @@ exports.bulkUpdateProductService = async (data) => {
   return result;
 };
 
+// _________________________________________________________________;
 exports.deleteProductServiceById = async (id) => {
   const result = await Product.deleteOne({ _id: id });
   return result;
 };
 
+// ______________________________________________________________________;
 exports.bulkDeleteProductService = async (data) => {
   const result = await Product.deleteMany({ _id: data.ids });
   return result;
