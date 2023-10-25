@@ -10,7 +10,7 @@ const {
   getSomeProductService,
 } = require("../services/product.services");
 
-// Get Product
+//================================ Get Product===========================
 exports.getAllProducts = async (req, res, next) => {
   try {
     // const products = await Product.where("name")
@@ -95,13 +95,12 @@ exports.getSomeProducts = async (req, res, next) => {
   }
 };
 
-// Create product
+//================================= Create product=====================================
 
 exports.createProduct = async (req, res, next) => {
   try {
     //save or create
     const result = await createProductService(req.body);
-    result.logger();
 
     // const product = new Product(req.body);
 
@@ -115,6 +114,7 @@ exports.createProduct = async (req, res, next) => {
       data: result,
     });
   } catch (error) {
+    console.log(error);
     res.status(400).json({
       status: "Failed",
       message: "Data is not inserted",
@@ -123,7 +123,7 @@ exports.createProduct = async (req, res, next) => {
   }
 };
 
-// Update Product
+//========================================== Update Product==============================
 exports.updateProductById = async (req, res, next) => {
   try {
     const { id } = req.params;
@@ -143,7 +143,7 @@ exports.updateProductById = async (req, res, next) => {
   }
 };
 
-// Bullk-Update product
+//================================== Bullk-Update product==========================================
 
 exports.bulkUpdateProduct = async (req, res, next) => {
   try {
@@ -190,20 +190,20 @@ exports.deleteProductById = async (req, res, next) => {
   }
 };
 
-// Bullk-Delete product
+//======================================= Bullk-Delete product==========================
 
 exports.bulkDeleteProduct = async (req, res, next) => {
   try {
     const data = req.body;
     const result = await bulkDeleteProductService(data);
 
-    if (!result.deletedCount) {
-      return res.status(400).json({
-        status: "Failed",
-        message: "No Data is Deleted",
-        error: error.message,
-      });
-    }
+    // if (!result.deletedCount) {
+    //   return res.status(400).json({
+    //     status: "Failed",
+    //     message: "No Data is Deleted",
+    //     error: error.message,
+    //   });
+    // }
 
     res.status(200).json({
       status: "Success",
@@ -211,10 +211,25 @@ exports.bulkDeleteProduct = async (req, res, next) => {
       data: result,
     });
   } catch (error) {
+    console.log(error);
     res.status(400).json({
       status: "Failed",
       message: "No product is deleted",
       error: error.message,
     });
   }
+};
+
+// ============================file uploader======================
+
+/* exports.fileUpload = async (req, res) => {
+  try {
+    return res.status(200).json(req.file);
+  } catch (error) {}
+};
+ */
+exports.fileUpload = async (req, res) => {
+  try {
+    return res.status(200).json(req.files);
+  } catch (error) {}
 };

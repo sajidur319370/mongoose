@@ -1,0 +1,17 @@
+[
+  {
+    "email": "sajidur@gmail.com",
+    "password": "Sajid@31",
+    "confirmPassword": "Sajid@31",
+    "role": "buyer",
+    "firstName": "Sajid",
+    "lastName": "Rahman",
+    "ContactNumber": "01524141",
+    "hippingAddress": "Dhaka,Komlapur",
+    "imageUrl": "https://i.ibb.co/TK1rgPJ/Sony-Alpha-A6400-Mirrorless-Digital-Camera-with-16-50mm-Lens.jpg",
+    "status": "active",
+    "passwordCreatedAt": "",
+    "passwordResetToken": "",
+    "passwordResetExpire": ""
+  }
+]

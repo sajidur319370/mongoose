@@ -1,4 +1,5 @@
 const Product = require("../models/Product");
+const Brand = require("../models/brand");
 // ________________________________________________________________________
 exports.getAllProductService = async () => {
   //{ price: { $gte: 300 } }
@@ -22,8 +23,16 @@ exports.getSomeProductService = async (filters, queries) => {
 
 // _________________________________________________________________________
 exports.createProductService = async (data) => {
-  const result = await Product.create(data);
-  return result;
+  const product = await Product.create(data);
+
+  const { _id: productId, brand } = product;
+
+  // update brand
+  const brandResult = await Brand.updateOne(
+    { _id: brand?.id },
+    { $push: { products: productId } }
+  );
+  return product;
 };
 
 // ______________________________________________________________________________;
@@ -67,6 +76,6 @@ exports.deleteProductServiceById = async (id) => {
 
 // ______________________________________________________________________;
 exports.bulkDeleteProductService = async (data) => {
-  const result = await Product.deleteMany({ _id: data.ids });
+  const result = await Product.deleteMany(/* { _id: data.ids } */);
   return result;
 };

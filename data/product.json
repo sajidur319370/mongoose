@@ -1,43 +1,73 @@
 [
   {
-    "name": "Karyn",
+    "name": "Rice",
     "description": "performances controller alien trend watershed hl mud error seeking sculpture comic gmbh veteran ascii robot team methodology argentina roof discounts see corresponding eddie acts uruguay licensing values bracelets builds dennis planning crystal articles volkswagen nerve dancing constant pb chrysler gorgeous coat everything illustration ground scenes commissions beef kai blogging tt",
     "price": 166,
     "unit": "kg",
     "quantity": 63,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": "652a50ec914796858aff3b01"
+    }
   },
   {
-    "name": "Antoinette",
+    "name": "Juce",
     "description": "announced images fcc wow workplace estimation pot bread registered cottage shipped saver emacs biggest fold quantitative automatic learn sparc sv relations jan week unless studios salary environments springfield features vpn bolt priest cooperation question latex hypothetical measure ala loss considerations phrases servers thousands extending shoes rocket mat pair stuart styles",
     "price": 244,
     "unit": "kg",
     "quantity": 14,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
-    "name": "Jestine",
+    "name": "Apple",
     "description": "emissions switched trash deviation fairy ferrari film thick commodity coverage enb concluded nitrogen xerox expiration ot packing telephony educated moments grown fleece palestine el collected journal save commodity information iceland ratios cat andy sporting michigan galleries vt center phillips deliver thus exchange zdnet happy karaoke enemy electric motherboard advanced advertisements",
     "price": 212,
     "unit": "kg",
     "quantity": 57,
-    "status": "Discontinued"
+    "status": "Discontinued",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
-    "name": "Wilhelmina",
+    "name": "Granate",
     "description": "enlarge sql compatibility weekends mate commodity flex americans producer ft aw cooperation spectrum dozen median guides allah garcia prostores demonstrate pill abstract sage sons treasure sleeve global crazy prevent wishes telephone irs really departments local extract split faqs speech visitor wagon yards monitored trains cl connectivity arbitration reminder severe controlling",
     "price": 509,
     "unit": "kg",
     "quantity": 14,
-    "status": "Out of Stock"
+    "status": "Out of Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
-    "name": "Dacia",
+    "name": "Dumble",
     "description": "although reuters connectivity pd yearly compliant stephanie ic nsw database permits matching wave classification rg brook creature tonight bare wine firewall coordinates nv hotel belly delays acknowledge uk stomach energy institution panasonic caution wood dying periodically fda analytical divided representative simultaneously locked administration feeding bedrooms wm death berlin oops correspondence",
     "price": 764,
     "unit": "kg",
     "quantity": 79,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Robin",
@@ -45,7 +75,13 @@
     "price": 804,
     "unit": "kg",
     "quantity": 22,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Tristan",
@@ -53,7 +89,13 @@
     "price": 709,
     "unit": "kg",
     "quantity": 73,
-    "status": "Out of Stock"
+    "status": "Out of Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Eulalia",
@@ -61,7 +103,13 @@
     "price": 971,
     "unit": "kg",
     "quantity": 38,
-    "status": "Discontinued"
+    "status": "Discontinued",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Jerrell",
@@ -69,7 +117,13 @@
     "price": 867,
     "unit": "kg",
     "quantity": 85,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Luise",
@@ -77,7 +131,13 @@
     "price": 761,
     "unit": "kg",
     "quantity": 23,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Lydia",
@@ -85,7 +145,13 @@
     "price": 228,
     "unit": "kg",
     "quantity": 83,
-    "status": "Out of Stock"
+    "status": "Out of Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Marcia",
@@ -93,7 +159,13 @@
     "price": 869,
     "unit": "kg",
     "quantity": 38,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Kathaleen",
@@ -101,7 +173,13 @@
     "price": 616,
     "unit": "kg",
     "quantity": 21,
-    "status": "Discontinued"
+    "status": "Discontinued",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Jovan",
@@ -109,7 +187,13 @@
     "price": 754,
     "unit": "kg",
     "quantity": 66,
-    "status": "Out of Stock"
+    "status": "Out of Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Krystle",
@@ -117,7 +201,13 @@
     "price": 496,
     "unit": "kg",
     "quantity": 31,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Frederic",
@@ -125,7 +215,13 @@
     "price": 261,
     "unit": "kg",
     "quantity": 20,
-    "status": "Out of Stock"
+    "status": "Out of Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Gricelda",
@@ -133,7 +229,13 @@
     "price": 682,
     "unit": "kg",
     "quantity": 92,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Marinda",
@@ -141,7 +243,13 @@
     "price": 121,
     "unit": "kg",
     "quantity": 72,
-    "status": "Out of Stock"
+    "status": "Out of Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Silas",
@@ -149,7 +257,13 @@
     "price": 806,
     "unit": "kg",
     "quantity": 44,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Chauncey",
@@ -157,7 +271,13 @@
     "price": 456,
     "unit": "kg",
     "quantity": 75,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Reina",
@@ -165,7 +285,13 @@
     "price": 241,
     "unit": "kg",
     "quantity": 77,
-    "status": "Out of Stock"
+    "status": "Out of Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Lupe",
@@ -173,7 +299,13 @@
     "price": 785,
     "unit": "kg",
     "quantity": 18,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Zofia",
@@ -181,7 +313,13 @@
     "price": 201,
     "unit": "kg",
     "quantity": 28,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Manie",
@@ -189,7 +327,13 @@
     "price": 451,
     "unit": "kg",
     "quantity": 29,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Pearline",
@@ -197,7 +341,13 @@
     "price": 482,
     "unit": "kg",
     "quantity": 19,
-    "status": "Discontinued"
+    "status": "Discontinued",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Brooks",
@@ -205,7 +355,13 @@
     "price": 755,
     "unit": "kg",
     "quantity": 15,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Milda",
@@ -213,7 +369,13 @@
     "price": 708,
     "unit": "kg",
     "quantity": 45,
-    "status": "Discontinued"
+    "status": "Discontinued",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Thomasine",
@@ -221,7 +383,13 @@
     "price": 463,
     "unit": "kg",
     "quantity": 95,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Margret",
@@ -229,7 +397,13 @@
     "price": 288,
     "unit": "kg",
     "quantity": 28,
-    "status": "In Stock"
+    "status": "In Stock",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   },
   {
     "name": "Chase",
@@ -237,6 +411,12 @@
     "price": 887,
     "unit": "kg",
     "quantity": 45,
-    "status": "Discontinued"
+    "status": "Discontinued",
+    "imageURLs": ["", ""],
+    "category": "",
+    "brand": {
+      "name": "fresh",
+      "id": ""
+    }
   }
 ]

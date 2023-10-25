@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Sajidur Rahman",
+    "email": "sajidurahman@gmail.com",
+    "brand": {
+      "name": "Fresh",
+      "id": "65320d7bdd66d2e956c5d216"
+    },
+    "contactNumber": ["02617827282", "8485748990"],
+    "imergencyContactNumber": "02617827282",
+    "tradeLicenceNumber": "0545495",
+    "presentAddress": "Gazipur",
+    "permanentAddress": "Dhaka",
+    "location": {
+      "name": "Rajsahi"
+    },
+    "imageUrl": "https://i.ibb.co/TK1rgPJ/Sony-Alpha-A6400-Mirrorless-Digital-Camera-with-16-50mm-Lens.jpg",
+    "nationalIdImageUrl": "https://i.ibb.co/TK1rgPJ/Sony-Alpha-A6400-Mirrorless-Digital-Camera-with-16-50mm-Lens.jpg",
+    "status": "active"
+  }
+]
